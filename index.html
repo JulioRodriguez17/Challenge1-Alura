@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Encriptador</title>
+    </head>
+
+    <body>
+        <main class="main">
+            <div class="logo">
+                <img src="./assets/Logo.svg" alt="logo">
+            </div>
+
+            <div class="container">
+                <div class="input_text">
+                    <textarea class="input_text_encrypt" id="input_text_encrypt" placeholder="Ingrese texto aquí"></textarea>
+                    <div class="bottom">
+                        <small><img src="./assets/icon.svg"> letras minusculas y sin acentos</small>
+                        <div class="buttons">
+                            <button class="button button_encrypt" id="button_encrypt">Encriptar</button>
+                            <button class="button button_decrypt"id="button_decrypt">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="output_text" id="output_text">
+                <div class="result no_texto">
+
+                    <div class="no_output">
+                        <img id="Muneco" class="" src="./assets/Muneco.svg" alt="muneco">
+                        <h2>Ningun mensaje fue encontrado</h2>
+                        <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                    </div>
+
+                    <div class="result_output">
+                        <textarea class="output_text_decrypt" id="output_text_decrypt" ></textarea>
+                        <button class="button button_decrypt button_copiar"id="button_copiar">Copiar</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer-distributed">
+			<h3>Encriptador-<span>Alura</span></h3>
+			<p class="footer-company-name">Julio Rodriguez - 2024 || Challenge 1</p>
+		</footer>
+
+        <script src="script.js"> </script>
+
+    </body>
+</html>
